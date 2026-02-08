@@ -37,4 +37,5 @@ jobs:
           ANSIBLE_HOST_KEY_CHECKING: "False"
         run: |
           cd ansible
+          export ANSIBLE_ROLES_PATH=$(pwd)/roles
           ansible-playbook playbooks/deploy.yml -i inventories/production.yml --private-key ~/.ssh/id_rsa
