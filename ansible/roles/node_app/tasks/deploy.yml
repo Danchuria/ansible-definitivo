@@ -17,7 +17,7 @@
 - name: Install npm dependencies
   command: npm install
   args:
-    chdir: /home/deploy/apps/myapp
+    chdir: /home/deploy/apps/myapp/app
 
 - name: Copy systemd service file
   template:
