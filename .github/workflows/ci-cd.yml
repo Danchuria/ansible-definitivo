@@ -31,11 +31,6 @@ jobs:
           echo "${{ secrets.SSH_PRIVATE_KEY }}" > ~/.ssh/id_rsa
           chmod 600 ~/.ssh/id_rsa
 
-      - name: Install Ansible
-        run: |
-          sudo apt update
-          sudo apt install -y ansible sshpass
-
       - name: Run Ansible Playbook
         env:
           GIT_REF: ${{ github.ref_name }}
