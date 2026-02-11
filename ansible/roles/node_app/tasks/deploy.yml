@@ -8,9 +8,9 @@
 
 - name: Checkout app code
   git:
-    repo: "https://github.com/Felipelb47/ansible-examen.git"
+    repo: "https://github.com/Danchuria/ansible-definitivo.git"
     dest: /home/deploy/apps/myapp
-    version: "{{ git_ref | default('main') }}"
+    version: "main"
     force: yes
   become: no
 
