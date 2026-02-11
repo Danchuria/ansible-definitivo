@@ -21,6 +21,6 @@
 
 - name: Restart Node.js app to apply changes
   service:
-    name: myapp # <--- ASEGÚRATE DE QUE ESTE ES EL NOMBRE DE TU SERVICIO
+    name: myapp
     state: restarted
   become: yes
